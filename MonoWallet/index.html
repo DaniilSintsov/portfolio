@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru"> <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="true" name="HandheldFriendly" />
+  <meta content="width" name="MobileOptimized" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220523165119"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220523165119" />
+  <title>Главная</title>
+  <meta name="description" content="Описание" />
+</head>
+
+<body>
+  <div id="home" class="wrapper"> <header class="header">
+  <div class="header__content">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-md" id="header">
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" width="45" class="me-2" alt="logo">MonoWallet</a>
+        <div class="icon-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <div data-bs-dismiss="offcanvas" aria-label="Close" class="icon-menu _active">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a data-goto=".wrapper" class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a data-goto="#about" class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a data-goto="#team" class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a data-goto="#token" class="nav-link" href="#token">Token</a>
+              </li>
+              <li class="nav-item">
+                <a data-goto="#roadmap" class="nav-link" href="#roadmap">Roadmap</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header> <main>
+      <!-- hello -->
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 col-sm-7">
+            <div class="hello">
+              <h1 class="title">Keep your<br>сryptocurrency<br>safe!</h1>
+              <div class="hello__btn-block">
+                <a style="--btn-color: #041DFF; --btn-shadow-color: #041dff45;" class="hello__btn" href="#">Download</a>
+                <a style="--btn-color: #1AD391; --btn-shadow-color: #1AD39145;" class="hello__btn"
+                  href="#">Buy&nbsp;$MONO</a>
+                <a style="--btn-color: #FF007A; --btn-shadow-color: #ff007b45;" class="hello__btn" href="#">AirDrop</a>
+              </div>
+              <p class="hello__text">You will be able<br>to download the wallet<br>after AirDrop.</p>
+            </div>
+          </div>
+          <div class="hello__img col-8 col-sm-5">
+            <img src="img/money-bag.png" class="img-fluid" alt="money-bag">
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div class="container-md">
+        <div class="about">
+          <div class="row">
+            <h2 id="about" class="title about__title">What's MonoWallet?</h2>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/kash-vings.svg" alt="kash-vings">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Send, receive, and exchange Bitcoin and 160+ cryptocurrencies with ease on the
+                    world's leading Desktop crypto wallet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/smile-silence.svg" alt="smile-silence">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Advanced security for your cryptocurrency. Your wallet is protected by a seed
+                    phrase of 24 words, which is very difficult to unravel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/exhaust.svg" alt="">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Cryptocurrency trading with minimum commission and maximum speed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/credit-card.svg" alt="">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Deposit and withdraw from popular electronic wallets and bank cards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/smile-stars.svg" alt="">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Wallet supports most popular networks and protocols for comfortable operation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 about__card-block">
+              <div class="about__card">
+                <div class="about__card-img">
+                  <img class="img-fluid" src="img/smile-stars.svg" alt="">
+                </div>
+                <div class="about__text-block">
+                  <p class="about__text">Our wallet is completely anonymous and we cant receive information about our
+                    users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- panel -->
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 ofx">
+            <div class="panel">
+              <div class="panel__header">
+                <img src="img/logo.svg" alt="logo">
+                <nav class="nav panel__nav">
+                  <a class="nav-link panel__link panel__link_active" href="#">Home</a>
+                  <a class="nav-link panel__link" href="#">Wallet</a>
+                  <a class="nav-link panel__link" href="#">Transactions</a>
+                  <a class="nav-link panel__link" href="#">Trade</a>
+                  <a class="nav-link panel__link" href="#">Staking</a>
+                  <a class="nav-link panel__link panel__link_disabled" href="#">NFT</a>
+                </nav>
+                <img src="img/panel-btn-img.png" alt="logo">
+              </div>
+              <div class="panel__body">
+                <div class="row">
+                  <div class="col-md-4 col-4">
+                    <img class="img-fluid" src="img/panel-img.png" alt="panel-img">
+                  </div>
+                  <div class="offset-md-1 col-md-7 col-8">
+                    <div class="panel__offer">
+                      <div class="panel__offer-wrap-header">
+                        <div class="panel__offer-header">
+                          <div class="panel__offer-price-block">
+                            <span class="panel__offer-price">$205.15 <span>+2.83%</span></span>
+                          </div>
+                          <nav class="nav panel__nav">
+                            <a class="nav-link panel__link panel__link_active" href="#">Now</a>
+                            <a class="nav-link panel__link" href="#">Day</a>
+                            <a class="nav-link panel__link" href="#">Week</a>
+                            <a class="nav-link panel__link" href="#">Month</a>
+                            <a class="nav-link panel__link" href="#">Year</a>
+                          </nav>
+                        </div>
+                        <div class="panel__offer-btn-block hello__btn-block">
+                          <a style="--btn-color: #4187FF; --btn-shadow-color: #4187ff45;" class="hello__btn"
+                            href="#">ETH</a>
+                          <a style="--btn-color: #FA8446; --btn-shadow-color: #FA844645;" class="hello__btn"
+                            href="#">BTC</a>
+                          <a style="--btn-color: #170AF1; --btn-shadow-color: #170AF145;" class="hello__btn"
+                            href="#">MONO</a>
+                        </div>
+                      </div>
+                      <div class="panel__offer-body">
+                        <div class="row">
+                          <div class="col-6"><a style="--btn-color: #1AD391; --btn-shadow-color: #1AD39145;"
+                              class="panel__offer-body-btn" href="#">Send</a></div>
+                          <div class="col-6"><a style="--btn-color: #FF007A; --btn-shadow-color: #FF007A45;"
+                              class="panel__offer-body-btn" href="#">Recieve</a></div>
+                          <div class="col-12 panel__offer-body-btn-margin"><a
+                              style="--btn-color: #041DFF; --btn-shadow-color: #041DFF45;" class="panel__offer-body-btn"
+                              href="#">Trade</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- team -->
+      <div id="team" class="container-md">
+        <div class="team">
+          <div class="row">
+            <h2 class="title team__title">Our team</h2>
+            <div class="col-12 col-md-6 team__card-block">
+              <div class="team__card">
+                <div class="team__card-img">
+                  <img class="img-fluid" src="img/james_brown.png" alt="james brown">
+                </div>
+                <div class="team__text-block">
+                  <h3 class="team__text-title">James Brown</h3>
+                  <p class="team__text">President of MonoWallet. Makes decisions in the development of the project.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 team__card-block">
+              <div class="team__card">
+                <div class="team__card-img">
+                  <img class="img-fluid" src="img/lloyd_holt.png" alt="lloyd holt">
+                </div>
+                <div class="team__text-block">
+                  <h3 class="team__text-title">Lloyd Holt</h3>
+                  <p class="team__text">Financial Director. Responsible for the token economy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 team__card-block">
+              <div class="team__card">
+                <div class="team__card-img">
+                  <img class="img-fluid" src="img/april_davis.png" alt="April Davis">
+                </div>
+                <div class="team__text-block">
+                  <h3 class="team__text-title">April Davis</h3>
+                  <p class="team__text">Web, UX/UI designer. Responsible for the beauty of our project.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 team__card-block">
+              <div class="team__card">
+                <div class="team__card-img">
+                  <img class="img-fluid" src="img/vincent_johnson.png" alt="Vincent Johnson">
+                </div>
+                <div class="team__text-block">
+                  <h3 class="team__text-title">Vincent Johnson</h3>
+                  <p class="team__text">Manages the Programmers department. Chief programmer of the project.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- token -->
+      <div id="token" class="container-md">
+        <div class="token">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title token__title">Token Metrics</h2>
+              <div class="token__img">
+                <img src="img/token-metrics.png" alt="token-metrics" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- airdrop -->
+      <div class="container-md">
+        <div class="airdrop">
+          <div class="row">
+            <div class="col-12 col-md-9">
+              <div class="airdrop__text-block">
+                <h2 class="title">AirDrop started!</h2>
+                <p class="airdrop__text">Participate in AirDrop and get $MONO tokens to your MonoWallet.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <img class="img-fluid" src="img/gift-dynamic-color.png" alt="gift">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- roadmap -->
+      <div id="roadmap" class="container-md">
+        <div class="row">
+          <h2 class="title">Roadmap</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="roadmap">
+          <div class="row">
+            <div class="col-12 ofx">
+              <div class="roadmap__card-wrap">
+                <div class="roadmap__card">
+                  <h3 class="roadmap__card-title">August '21</h3>
+                  <p class="roadmap__card-text">The beginning of wallet development. A set of commands.</p>
+                </div>
+                <img class="roadmap__img" src="img/arrow.svg" alt="arrow">
+                <div class="roadmap__card">
+                  <h3 class="roadmap__card-title">January '22</h3>
+                  <p class="roadmap__card-text">Completion of wallet development, building plans for future development.
+                  </p>
+                </div>
+                <img class="roadmap__img" src="img/arrow.svg" alt="arrow">
+                <div class="roadmap__card">
+                  <h3 class="roadmap__card-title">April '22</h3>
+                  <p class="roadmap__card-text">Creation, listing of a token. Closed pre-sale and open airdrop.</p>
+                </div>
+                <img class="roadmap__img" src="img/arrow.svg" alt="arrow">
+                <div class="roadmap__card">
+                  <h3 class="roadmap__card-title">May '22</h3>
+                  <p class="roadmap__card-text">Wallet release. The beginning of the development of the NFT marketplace.
+                  </p>
+                </div>
+                <div class="roadmap__card-last"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main> <footer class="footer">
+  <div class="container-lg">
+    <div class="row align-items-center">
+      <div class="col-9">
+        <h2 class="footer__title">We are trying to make the best<br>crypto wallet for you!</h2>
+      </div>
+      <div class="col-3">
+        <img class="img-fluid" src="img/smile-love.svg" alt="smile-love">
+      </div>
+    </div>
+  </div>
+</footer> </div>
+  <!-- rhombus -->
+  <div class="rhombus">
+    <div class="rhombus__wrap">
+      <div class="rhombus__field">
+        <div style="--rhombus-color: rgba(26, 211, 145, 0.5);" class="rhombus__item">
+        </div>
+      </div>
+      <div class="rhombus__field">
+        <div style="--rhombus-color: rgba(255, 0, 122, 0.5);" class="rhombus__item">
+        </div>
+      </div>
+      <div class="rhombus__field">
+        <div style="--rhombus-color: rgba(15, 63, 231, 0.5);" class="rhombus__item">
+        </div>
+      </div>
+      <div class="rhombus__field">
+        <div style="--rhombus-color: rgba(231, 15, 15, 0.5);" class="rhombus__item">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.min.js?_v=20220523165119"></script>
+</body>
+
+</html>
