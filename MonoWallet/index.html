@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru"> <head>
+<html lang="ru">
+
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta content="true" name="HandheldFriendly" />
@@ -10,50 +12,53 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220523165119"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.min.css?_v=20220523165119" />
-  <title>Главная</title>
+  <title>MonoWallet</title>
   <meta name="description" content="Описание" />
 </head>
 
 <body>
-  <div id="home" class="wrapper"> <header class="header">
-  <div class="header__content">
-    <nav class="navbar navbar-expand-md">
-      <div class="container-md" id="header">
-        <a class="navbar-brand" href="#"><img src="img/logo.svg" width="45" class="me-2" alt="logo">MonoWallet</a>
-        <div class="icon-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <div data-bs-dismiss="offcanvas" aria-label="Close" class="icon-menu _active">
+  <div id="home" class="wrapper">
+    <header class="header">
+      <div class="header__content">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-md" id="header">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" width="45" class="me-2" alt="logo">MonoWallet</a>
+            <div class="icon-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
               <span></span><span></span><span></span>
             </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <div data-bs-dismiss="offcanvas" aria-label="Close" class="icon-menu _active">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a data-goto=".wrapper" class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-goto="#about" class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-goto="#team" class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-goto="#token" class="nav-link" href="#token">Token</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-goto="#roadmap" class="nav-link" href="#roadmap">Roadmap</a>
+                  </li>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a data-goto=".wrapper" class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a data-goto="#about" class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a data-goto="#team" class="nav-link" href="#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a data-goto="#token" class="nav-link" href="#token">Token</a>
-              </li>
-              <li class="nav-item">
-                <a data-goto="#roadmap" class="nav-link" href="#roadmap">Roadmap</a>
-              </li>
-          </div>
-        </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header> <main>
+    </header>
+    <main>
       <!-- hello -->
       <div class="container-md">
         <div class="row">
@@ -330,18 +335,20 @@
           </div>
         </div>
       </div>
-    </main> <footer class="footer">
-  <div class="container-lg">
-    <div class="row align-items-center">
-      <div class="col-9">
-        <h2 class="footer__title">We are trying to make the best<br>crypto wallet for you!</h2>
+    </main>
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-9">
+            <h2 class="footer__title">We are trying to make the best<br>crypto wallet for you!</h2>
+          </div>
+          <div class="col-3">
+            <img class="img-fluid" src="img/smile-love.svg" alt="smile-love">
+          </div>
+        </div>
       </div>
-      <div class="col-3">
-        <img class="img-fluid" src="img/smile-love.svg" alt="smile-love">
-      </div>
-    </div>
+    </footer>
   </div>
-</footer> </div>
   <!-- rhombus -->
   <div class="rhombus">
     <div class="rhombus__wrap">
