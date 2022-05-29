@@ -1,0 +1,136 @@
+// Меню-бургер
+.icon-menu {
+  display: none;
+
+  @media (max-width: $md) {
+    z-index: 10;
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0px 13px;
+
+    & span,
+    &::before,
+    &::after {
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 10%;
+      transition: all 0.3s ease 0s;
+      background: white;
+    }
+
+    & span {
+      top: 50%;
+      transform: scale(1) translate(0, -50%);
+    }
+
+    &::before {
+      top: 0;
+      content: "";
+    }
+
+    &::after {
+      bottom: 0;
+      content: "";
+    }
+
+    &._active {
+      & span {
+        transform: scale(0) translate(0, -50%);
+      }
+
+      &::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, 0);
+      }
+
+      &::after {
+        top: 50%;
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }
+  }
+}
+
+// ----- //
+
+.navbar-brand,
+.nav-link {
+  color: $white;
+  font-weight: 600;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.nav-link {
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.offcanvas-header,
+.offcanvas-body {
+  @media (max-width: $md) {
+    background-color: $bg-brighter;
+    max-width: 200px;
+  }
+}
+
+.offcanvas {
+  @media (max-width: $md) {
+    max-width: 200px;
+  }
+}
+
+#offcanvasNavbarLabel.offcanvas-title {
+  color: $white;
+}
+
+.navbar {
+  position: relative;
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+
+  @media (max-width: $md) {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  &._fixedNav {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+}
+
+.header {
+  position: relative;
+  height: 235px;
+
+  @media (max-width: $md) {
+    height: 68px;
+  }
+}
+
+.header__content {
+  position: relative;
+  width: 100%;
+
+  &._fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $bg-brighter;
+    z-index: 1030;
+  }
+}

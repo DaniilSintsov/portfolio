@@ -1,0 +1,391 @@
+.title {
+  @include adaptiv-font(50, 25);
+  color: $white;
+  font-weight: 600;
+}
+
+.ofx {
+  overflow-x: auto;
+}
+
+.roadmap,
+.token,
+.hello,
+.about,
+.panel,
+.team,
+.airdrop {
+  z-index: 5;
+}
+
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  position: relative;
+
+  &__text {
+    font-size: 15px;
+    color: #ffffff7c;
+    margin-top: 10px;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__btn {
+    display: block;
+    padding: 15px 40px;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+
+    @media (max-width: $lg) {
+      padding: 10px;
+    }
+
+    &:hover {
+      color: $white;
+      box-shadow: 0px 0px 11px 7px var(--btn-shadow-color);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 43px;
+      align-items: center;
+
+      @media (max-width: $lg) {
+        column-gap: 20px;
+      }
+    }
+  }
+}
+
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+
+  @media (max-width: $md) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    padding: 50px;
+    border-radius: 32px;
+    height: 100%;
+
+    @media (max-width: $md) {
+      padding: 20px;
+    }
+
+    &-block {
+      padding-bottom: 70px;
+
+      @media (max-width: $md) {
+        padding-bottom: 20px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      @media (min-width: $md) {
+        &:nth-last-child(-n+2) {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-img {
+      margin-bottom: 35px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  & p {
+    margin-bottom: 0rem !important;
+    @include adaptiv-font(35, 15);
+  }
+}
+
+.panel {
+  min-width: 1296px;
+  background-color: $bg-brighter;
+  padding: 48px 80px;
+  border: 5px solid $white;
+  border-radius: 32px;
+  position: relative;
+
+  @media (max-width: $md) {
+    padding: 20px;
+    min-width: 1000px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    color: #ffffff7b;
+    pointer-events: none;
+
+    &_active {
+      color: #fff;
+    }
+
+    &_disabled {
+      color: #ffffff2b;
+    }
+  }
+
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &-btn-block {
+      margin-top: 30px;
+    }
+
+    &-wrap-header {
+      display: block;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-price {
+      font-size: 35px;
+      color: $white;
+
+      & span {
+        font-size: 20px;
+        color: #42FF00;
+      }
+    }
+
+    &-body {
+      display: block;
+
+      &-btn {
+        display: block;
+        text-align: center;
+        padding: 15px 40px;
+        background-color: var(--btn-color);
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: $white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+
+        &-margin {
+          margin-top: 25px;
+        }
+
+        @media (max-width: $lg) {
+          padding: 10px;
+        }
+
+        &:hover {
+          color: $white;
+          box-shadow: 0px 0px 11px 7px var(--btn-shadow-color);
+        }
+      }
+    }
+  }
+}
+
+.team {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+
+  @media (max-width: $md) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    &-title {
+      @include adaptiv-font(35, 15);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    padding: 50px;
+    border-radius: 32px;
+    height: 100%;
+
+    @media (max-width: $md) {
+      padding: 20px;
+    }
+
+    &-block {
+      padding-bottom: 70px;
+
+      @media (max-width: $md) {
+        padding-bottom: 20px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      @media (min-width: $md) {
+        &:nth-last-child(-n+2) {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-img {
+      margin-bottom: 35px;
+      width: 100%;
+    }
+  }
+
+  & p {
+    margin-bottom: 0rem !important;
+    @include adaptiv-font(35, 15);
+  }
+}
+
+.token {
+  margin-bottom: 100px;
+  position: relative;
+
+  @media (max-width: $md) {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.airdrop {
+  padding: 46px 70px;
+  margin-bottom: 100px;
+  background: #D11358 linear-gradient(263.02deg, #1E0810 0%, #D11358 100%);
+  border-radius: 32px;
+  position: relative;
+
+  @media (max-width: $md) {
+    padding: 20px 35px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-weight: 500;
+    @include adaptiv-font(35, 15);
+    color: $white;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+}
+
+.roadmap {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  position: relative;
+
+  @media (max-width: $md) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    width: 100px;
+  }
+
+  &__card-wrap {
+    display: flex;
+    column-gap: 25px;
+    height: 100%;
+  }
+
+  &__card {
+    flex: 0 0 600px;
+    height: 100%;
+    padding: 70px 50px;
+    background-color: $white;
+    border-radius: 32px;
+
+    @media (max-width: $md) {
+      flex: 0 0 270px;
+      padding: 30px 20px;
+    }
+
+    &-last {
+      height: 100%;
+      flex: 0 0 1px;
+    }
+
+    & p {
+      margin-bottom: 0 !important;
+    }
+
+    &-title {
+      font-weight: 600;
+      @include adaptiv-font(35, 15);
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      @include adaptiv-font(35, 15);
+      color: #0000007c;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+// Импорт bootstrap
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min";
+
+// Переменные
+$fontFamily: "Montserrat";
+// breakpoints
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+$xxl: 1399px;
+$maxWidth: 1440;
+$minWidth: 320;
+// colors
+$bg: #000;
+$bg-brighter: #0C0E0F;
+$sb-thumb: #414141;
+$white: #eee;
+// ----- //
+
+// Адаптивный шрифт
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+  // Для объявления font-size:
+  // @include adaptiv-font($pcSize, $mobSize);
+}
+
+// ----- //
+
+html,
+body {
+  font-family: $fontFamily;
+  height: 100%;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $sb-thumb $bg;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $sb-thumb $bg;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $bg;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $sb-thumb;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff0f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $sb-thumb;
+  border-radius: 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+  background-color: $bg;
+}
+
+.rhombus {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+
+  &__field {
+    height: 1228px;
+    position: relative;
+
+    &:first-child {
+      margin-top: 1200px;
+
+      @media (max-width: $md) {
+        margin-top: 600px;
+      }
+    }
+
+    &:nth-child(odd) .rhombus__item {
+      position: absolute;
+      left: -20%;
+    }
+
+    &:nth-child(even) .rhombus__item {
+      position: absolute;
+      right: -20%;
+    }
+  }
+
+  &__item {
+    width: 1228px;
+    height: 1228px;
+    border: 6px solid var(--rhombus-color);
+    border-radius: 85px;
+    transform: rotate(41deg);
+  }
+}
+
+@import "_header";
+
+@import "_main";
+
+@import "_footer";
