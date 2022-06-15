@@ -1,380 +1,825 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta content="true" name="HandheldFriendly" />
-<meta content="width" name="MobileOptimized" />
-<meta content="yes" name="apple-mobile-web-app-capable" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/style.min.css?_v=20220615195740" />
-<title>Цены - OkeyPost</title><meta name="description" content="Description" />
-</head><body>
-<div class="wrapper">
-<header class="header">
-  <div class="header__wrap">
-    <div class="header__container"> <a class="header__logo" href="/"><img class="logo" src="img/logo.svg" alt="Логотип"/></a>
-      <div class="header__menu menu-header"> 
-        <nav class="menu-header__body" data-da=".burger-menu__body, 767.98, first">
-          <ul class="menu-header__list"> 
-            <li class="menu-header__item"> <a class="menu-header__link" href="buy.html">Как покупать</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="sales.html">Распродажи</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="prices.html">Цены</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="questions.html">Помощь</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="bonuses.html">Бонусы</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="blog.html">Блог</a></li>
-            <li class="menu-header__item"> <a class="menu-header__link" href="stores.html">Магазины</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__contact contact-header" data-da=".burger-menu__body, 767.98, last"><a class="_icon-user contact-header__login-link" href="#" data-popup="#popup">Вход</a><a class="contact-header__contact-link button" href="#">Связаться с нами</a></div>
-      <div class="header__burger-menu burger-menu">
-        <button class="burger-menu__icon-menu icon-menu" type="button"><span> </span></button>
-        <div class="burger-menu__body"></div>
-      </div>
-    </div>
-  </div>
-</header>
-<main class="page">
-  <section class="page__submission submission">
-    <div class="submission__background bg-block">
-      <div class="submission__container">
-        <div class="submission__breadcrumps"><a class="submission__link" href="/">Главная</a> / <a class="submission__link" href="prices.html">Цены</a></div>
-        <h1 class="submission__title">Услуги доставки из Великобритании</h1>
-      </div>
-    </div>
-  </section>
-  <section class="page__services services">
-    <div class="services__container">
-      <div class="services__item"> 
-        <div class="services__img"> <picture><source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.png" alt="Ваш личный адрес для покупок"/></picture></div>
-        <div class="services__description"> 
-          <h3 class="services__title">Ваш личный адрес для покупок</h3>
-          <p class="services__text">на нашем современном автоматизированном складе в безналоговом Делавэре</p><a class="services__link" href="#">Бесплатно</a>
-        </div>
-      </div>
-      <div class="services__item"> 
-        <div class="services__img"> <picture><source srcset="img/services/02.webp" type="image/webp"><img src="img/services/02.png" alt="Объединение нескольких посылок в одну"/></picture></div>
-        <div class="services__description"> 
-          <h3 class="services__title">Объединение нескольких посылок в одну</h3>
-          <p class="services__text">ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной</p><a class="services__link" href="#">от £10.00</a>
-        </div>
-      </div>
-      <div class="services__item"> 
-        <div class="services__img"> <picture><source srcset="img/services/03.webp" type="image/webp"><img src="img/services/03.png" alt="Усиленная упаковка по запросу"/></picture></div>
-        <div class="services__description"> 
-          <h3 class="services__title">Усиленная упаковка по запросу</h3>
-          <p class="services__text">Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.</p><a class="services__link" href="#">от £0.25</a>
-        </div>
-      </div>
-      <div class="services__item"> 
-        <div class="services__img"> <picture><source srcset="img/services/04.webp" type="image/webp"><img src="img/services/04.png" alt="Хранение входящих посылок 30 дней"/></picture></div>
-        <div class="services__description"> 
-          <h3 class="services__title">Хранение входящих посылок 30 дней</h3>
-          <p class="services__text">чем больше срок хранения посылок на складе – тем больше вы сможете собрать</p><a class="services__link" href="#">Бесплатно</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="page__delivery delivery"> 
-    <div class="delivery__container">
-      <h2 class="delivery__title delivery__title_page_prices title">Онлайн-калькулятор стоимости доставки товара</h2>
-      <p class="delivery__text text-light">Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.</p>
-      <form class="delivery__form calc-form" action="#"> 
-        <div class="calc-form__inputs-block"> 
-          <div class="calc-form__select select-calc">
-            <label class="select-calc__label" for="calc-select-country">Страна:</label>
-            <div class="select-calc__select-wrapper _icon-globus">
-              <select class="select-calc__select" id="calc-select-country" name="calc-select-country"> 
-                <option value="1" selected="selected">Россия</option>
-                <option value="2">Казахстан</option>
-                <option value="3">Белоруссия</option>
-                <option value="4">Турция</option>
-              </select>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20220615195740" />
+    <title>Цены - OkeyPost</title>
+    <meta name="description" content="Description" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrap">
+          <div class="header__container">
+            <a
+              class="header__logo"
+              href="https://daniilsintsov.github.io/portfolio/OkeyPost/"
+              ><img class="logo" src="img/logo.svg" alt="Логотип"
+            /></a>
+            <div class="header__menu menu-header">
+              <nav
+                class="menu-header__body"
+                data-da=".burger-menu__body, 767.98, first"
+              >
+                <ul class="menu-header__list">
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="buy.html"
+                      >Как покупать</a
+                    >
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="sales.html"
+                      >Распродажи</a
+                    >
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="prices.html">Цены</a>
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="questions.html"
+                      >Помощь</a
+                    >
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="bonuses.html">Бонусы</a>
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="blog.html">Блог</a>
+                  </li>
+                  <li class="menu-header__item">
+                    <a class="menu-header__link" href="stores.html">Магазины</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="calc-form__input input-calc">
-            <label class="input-calc__label" for="calc-city">Город:</label>
-            <div class="input-calc__input-wrapper _icon-building">
-              <input class="input-calc__input" id="calc-city" name="calc-city" type="text" required="" value="Москва"/>
+            <div
+              class="header__contact contact-header"
+              data-da=".burger-menu__body, 767.98, last"
+            >
+              <a
+                class="_icon-user contact-header__login-link"
+                href="#"
+                data-popup="#popup"
+                >Вход</a
+              ><a class="contact-header__contact-link button" href="#"
+                >Связаться с нами</a
+              >
             </div>
-          </div>
-          <div class="calc-form__input input-calc">
-            <label class="input-calc__label" for="calc-index">Индекс:</label>
-            <div class="input-calc__input-wrapper _icon-notebook">
-              <input class="input-calc__input" id="calc-index" name="calc-index" type="text" required="" placeholder="Введите индекс"/>
-            </div>
-          </div>
-          <div class="calc-form__input input-calc">
-            <label class="input-calc__label" for="calc-weight">Вес посылки:</label>
-            <div class="input-calc__input-wrapper _icon-barbell">
-              <input class="input-calc__input" id="calc-weight" name="calc-weight" type="text" required="" value="0,5"/>
-            </div>
-          </div>
-          <div class="calc-form__select select-calc">
-            <label class="select-calc__label" for="calc-select-service">Дополнительные услуги:</label>
-            <div class="select-calc__select-wrapper _icon-textdoc">
-              <select class="select-calc__select" id="calc-select-service" name="calc-select-service"> 
-                <option disabled="disabled" selected="selected">Выберите услуги</option>
-                <option value="1">Услуга</option>
-                <option value="2">Услуга</option>
-                <option value="3">Услуга</option>
-              </select>
+            <div class="header__burger-menu burger-menu">
+              <button class="burger-menu__icon-menu icon-menu" type="button">
+                <span> </span>
+              </button>
+              <div class="burger-menu__body"></div>
             </div>
           </div>
         </div>
-        <button class="calc-form__button button" type="submit">Рассчитать</button>
-      </form>
-      <h2 class="delivery__title title">Варианты доставки:</h2>
-      <div class="delivery__accordeon accordeon-delivery" data-spollers="" data-one-spoller="">
-        <div class="accordeon-delivery__item">
-          <div class="accordeon-delivery__title title-accordeon-delivery" type="button" data-spoller="">
-            <div class="title-accordeon-delivery__heading">
-              <div class="title-accordeon-delivery__heading-image"> <img src="img/icons/accordeon-delivery/post.svg" alt="Почта России"/></div>
-              <h3 class="title-accordeon-delivery__heading-title">Почта России</h3>
+      </header>
+      <main class="page">
+        <section class="page__submission submission">
+          <div class="submission__background bg-block">
+            <div class="submission__container">
+              <div class="submission__breadcrumps">
+                <a
+                  class="submission__link"
+                  href="https://daniilsintsov.github.io/portfolio/OkeyPost/"
+                  >Главная</a
+                >
+                /
+                <a class="submission__link" href="prices.html">Цены</a>
+              </div>
+              <h1 class="submission__title">
+                Услуги доставки из Великобритании
+              </h1>
             </div>
-            <div class="title-accordeon-delivery__info info-accordeon-delivery">
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Сроки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">10-14 дней</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Стоимость доставки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">от £27.00</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Итого:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">£41.99</span></div>
-              <div class="info-accordeon-delivery__item">
-                <div class="info-accordeon-delivery__arrow _icon-arrow-bottom"></div>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__container">
+            <div class="services__item">
+              <div class="services__img">
+                <picture
+                  ><source srcset="img/services/01.webp" type="image/webp" />
+                  <img
+                    src="img/services/01.png"
+                    alt="Ваш личный адрес для покупок"
+                /></picture>
+              </div>
+              <div class="services__description">
+                <h3 class="services__title">Ваш личный адрес для покупок</h3>
+                <p class="services__text">
+                  на нашем современном автоматизированном складе в безналоговом
+                  Делавэре
+                </p>
+                <a class="services__link" href="#">Бесплатно</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__img">
+                <picture
+                  ><source srcset="img/services/02.webp" type="image/webp" />
+                  <img
+                    src="img/services/02.png"
+                    alt="Объединение нескольких посылок в одну"
+                /></picture>
+              </div>
+              <div class="services__description">
+                <h3 class="services__title">
+                  Объединение нескольких посылок в одну
+                </h3>
+                <p class="services__text">
+                  ведь часто отправлять несколько посылок в одной коробке
+                  гораздо выгоднее, чем по одной
+                </p>
+                <a class="services__link" href="#">от £10.00</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__img">
+                <picture
+                  ><source srcset="img/services/03.webp" type="image/webp" />
+                  <img
+                    src="img/services/03.png"
+                    alt="Усиленная упаковка по запросу"
+                /></picture>
+              </div>
+              <div class="services__description">
+                <h3 class="services__title">Усиленная упаковка по запросу</h3>
+                <p class="services__text">
+                  Мы дополнительно упакуем вашу посылку в пленку, коробку с
+                  двойными стенками.
+                </p>
+                <a class="services__link" href="#">от £0.25</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__img">
+                <picture
+                  ><source srcset="img/services/04.webp" type="image/webp" />
+                  <img
+                    src="img/services/04.png"
+                    alt="Хранение входящих посылок 30 дней"
+                /></picture>
+              </div>
+              <div class="services__description">
+                <h3 class="services__title">
+                  Хранение входящих посылок 30 дней
+                </h3>
+                <p class="services__text">
+                  чем больше срок хранения посылок на складе – тем больше вы
+                  сможете собрать
+                </p>
+                <a class="services__link" href="#">Бесплатно</a>
               </div>
             </div>
           </div>
-          <div class="accordeon-delivery__body text-light">Обычная доставка по почте России</div>
-        </div>
-        <div class="accordeon-delivery__item">
-          <div class="accordeon-delivery__title title-accordeon-delivery" type="button" data-spoller="">
-            <div class="title-accordeon-delivery__heading">
-              <div class="title-accordeon-delivery__heading-image"> <img src="img/icons/accordeon-delivery/post-esm.svg" alt="EMS ПОЧТА РОССИЯ"/></div>
-              <h3 class="title-accordeon-delivery__heading-title">EMS ПОЧТА РОССИЯ</h3>
-            </div>
-            <div class="title-accordeon-delivery__info info-accordeon-delivery">
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Сроки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">9-12 дней</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Стоимость доставки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">от £40.00</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Итого:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">£54.55</span></div>
-              <div class="info-accordeon-delivery__item">
-                <div class="info-accordeon-delivery__arrow _icon-arrow-bottom"></div>
+        </section>
+        <section class="page__delivery delivery">
+          <div class="delivery__container">
+            <h2 class="delivery__title delivery__title_page_prices title">
+              Онлайн-калькулятор стоимости доставки товара
+            </h2>
+            <p class="delivery__text text-light">
+              Задайте необходимые параметры посылки, и калькулятор рассчитает
+              приблизительную стоимость доставки вашей посылки из Англии.
+            </p>
+            <form class="delivery__form calc-form" action="#">
+              <div class="calc-form__inputs-block">
+                <div class="calc-form__select select-calc">
+                  <label class="select-calc__label" for="calc-select-country"
+                    >Страна:</label
+                  >
+                  <div class="select-calc__select-wrapper _icon-globus">
+                    <select
+                      class="select-calc__select"
+                      id="calc-select-country"
+                      name="calc-select-country"
+                    >
+                      <option value="1" selected="selected">Россия</option>
+                      <option value="2">Казахстан</option>
+                      <option value="3">Белоруссия</option>
+                      <option value="4">Турция</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calc-form__input input-calc">
+                  <label class="input-calc__label" for="calc-city"
+                    >Город:</label
+                  >
+                  <div class="input-calc__input-wrapper _icon-building">
+                    <input
+                      class="input-calc__input"
+                      id="calc-city"
+                      name="calc-city"
+                      type="text"
+                      required=""
+                      value="Москва"
+                    />
+                  </div>
+                </div>
+                <div class="calc-form__input input-calc">
+                  <label class="input-calc__label" for="calc-index"
+                    >Индекс:</label
+                  >
+                  <div class="input-calc__input-wrapper _icon-notebook">
+                    <input
+                      class="input-calc__input"
+                      id="calc-index"
+                      name="calc-index"
+                      type="text"
+                      required=""
+                      placeholder="Введите индекс"
+                    />
+                  </div>
+                </div>
+                <div class="calc-form__input input-calc">
+                  <label class="input-calc__label" for="calc-weight"
+                    >Вес посылки:</label
+                  >
+                  <div class="input-calc__input-wrapper _icon-barbell">
+                    <input
+                      class="input-calc__input"
+                      id="calc-weight"
+                      name="calc-weight"
+                      type="text"
+                      required=""
+                      value="0,5"
+                    />
+                  </div>
+                </div>
+                <div class="calc-form__select select-calc">
+                  <label class="select-calc__label" for="calc-select-service"
+                    >Дополнительные услуги:</label
+                  >
+                  <div class="select-calc__select-wrapper _icon-textdoc">
+                    <select
+                      class="select-calc__select"
+                      id="calc-select-service"
+                      name="calc-select-service"
+                    >
+                      <option disabled="disabled" selected="selected">
+                        Выберите услуги
+                      </option>
+                      <option value="1">Услуга</option>
+                      <option value="2">Услуга</option>
+                      <option value="3">Услуга</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button class="calc-form__button button" type="submit">
+                Рассчитать
+              </button>
+            </form>
+            <h2 class="delivery__title title">Варианты доставки:</h2>
+            <div
+              class="delivery__accordeon accordeon-delivery"
+              data-spollers=""
+              data-one-spoller=""
+            >
+              <div class="accordeon-delivery__item">
+                <div
+                  class="accordeon-delivery__title title-accordeon-delivery"
+                  type="button"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-delivery__heading">
+                    <div class="title-accordeon-delivery__heading-image">
+                      <img
+                        src="img/icons/accordeon-delivery/post.svg"
+                        alt="Почта России"
+                      />
+                    </div>
+                    <h3 class="title-accordeon-delivery__heading-title">
+                      Почта России
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-delivery__info info-accordeon-delivery"
+                  >
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Сроки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >10-14 дней</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title"
+                        >Стоимость доставки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >от £27.00</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Итого:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >£41.99</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <div
+                        class="info-accordeon-delivery__arrow _icon-arrow-bottom"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordeon-delivery__body text-light">
+                  Обычная доставка по почте России
+                </div>
+              </div>
+              <div class="accordeon-delivery__item">
+                <div
+                  class="accordeon-delivery__title title-accordeon-delivery"
+                  type="button"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-delivery__heading">
+                    <div class="title-accordeon-delivery__heading-image">
+                      <img
+                        src="img/icons/accordeon-delivery/post-esm.svg"
+                        alt="EMS ПОЧТА РОССИЯ"
+                      />
+                    </div>
+                    <h3 class="title-accordeon-delivery__heading-title">
+                      EMS ПОЧТА РОССИЯ
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-delivery__info info-accordeon-delivery"
+                  >
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Сроки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >9-12 дней</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title"
+                        >Стоимость доставки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >от £40.00</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Итого:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >£54.55</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <div
+                        class="info-accordeon-delivery__arrow _icon-arrow-bottom"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordeon-delivery__body text-light">
+                  Доставка по почте России: ESM
+                </div>
+              </div>
+              <div class="accordeon-delivery__item">
+                <div
+                  class="accordeon-delivery__title title-accordeon-delivery"
+                  type="button"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-delivery__heading">
+                    <div class="title-accordeon-delivery__heading-image">
+                      <img
+                        src="img/icons/accordeon-delivery/post-small.svg"
+                        alt="Почта России"
+                      />
+                    </div>
+                    <h3 class="title-accordeon-delivery__heading-title">
+                      ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-delivery__info info-accordeon-delivery"
+                  >
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Сроки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >10-14 дней</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title"
+                        >Стоимость доставки:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >от £13.00</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <span class="info-accordeon-delivery__title">Итого:</span
+                      ><span
+                        class="info-accordeon-delivery__text text-accordeon-delivery"
+                        >£90.50</span
+                      >
+                    </div>
+                    <div class="info-accordeon-delivery__item">
+                      <div
+                        class="info-accordeon-delivery__arrow _icon-arrow-bottom"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordeon-delivery__body text-light">
+                  Доставка по почте России: мелкие пакеты
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordeon-delivery__body text-light">Доставка по почте России: ESM</div>
-        </div>
-        <div class="accordeon-delivery__item">
-          <div class="accordeon-delivery__title title-accordeon-delivery" type="button" data-spoller="">
-            <div class="title-accordeon-delivery__heading">
-              <div class="title-accordeon-delivery__heading-image"> <img src="img/icons/accordeon-delivery/post-small.svg" alt="Почта России"/></div>
-              <h3 class="title-accordeon-delivery__heading-title">ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ</h3>
-            </div>
-            <div class="title-accordeon-delivery__info info-accordeon-delivery">
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Сроки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">10-14 дней</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Стоимость доставки:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">от £13.00</span></div>
-              <div class="info-accordeon-delivery__item"><span class="info-accordeon-delivery__title">Итого:</span><span class="info-accordeon-delivery__text text-accordeon-delivery">£90.50</span></div>
-              <div class="info-accordeon-delivery__item">
-                <div class="info-accordeon-delivery__arrow _icon-arrow-bottom"></div>
+        </section>
+        <section class="page__operator operator">
+          <div class="operator__container">
+            <h2 class="operator__title title">
+              Покупки с операторами Okeypost.com
+            </h2>
+            <div
+              class="operator__accordeon accordeon-operator"
+              data-spollers=""
+              data-one-spoller=""
+            >
+              <div class="accordeon-operator__item">
+                <div
+                  class="accordeon-operator__title title-accordeon-operator"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-operator__title-block">
+                    <h3 class="title-accordeon-operator__title">
+                      Быстрое оформление покупок в интернет-магазинах
+                    </h3>
+                    <p class="title-accordeon-operator__text">
+                      Вы присылаете ссылки, а оформлением заказов занимаются
+                      операторы Почтой.ком. Они сделают покупки за вас,
+                      проконтролируют доставку на склад и сообщат, когда всё
+                      будет готово.
+                    </p>
+                  </div>
+                  <div class="title-accordeon-operator__info">
+                    <p class="title-accordeon-operator__info-text">
+                      5% от стоимости товаров минимум £7 для каждого магазина,
+                      но не менее £7 для каждого лота eBay
+                    </p>
+                  </div>
+                </div>
+                <div class="accordeon-operator__body">
+                  <p class="accordeon-operator__text-body">
+                    Не следует, однако забывать, что укрепление и развитие
+                    структуры требуют определения и уточнения новых предложений.
+                    Равным образом укрепление и развитие структуры влечет за
+                    собой процесс внедрения и модернизации модели развития.
+                  </p>
+                </div>
+              </div>
+              <div class="accordeon-operator__item">
+                <div
+                  class="accordeon-operator__title title-accordeon-operator"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-operator__title-block">
+                    <h3 class="title-accordeon-operator__title">
+                      Фото товара по услуге "Покупка с операторами"
+                    </h3>
+                    <p class="title-accordeon-operator__text">
+                      Три фото выбранного вами товара, приобретенного по услуге
+                      "Полное сопровождение"
+                    </p>
+                  </div>
+                  <div class="title-accordeon-operator__info">
+                    <p class="title-accordeon-operator__info-text">£2</p>
+                  </div>
+                </div>
+                <div class="accordeon-operator__body">
+                  <p class="accordeon-operator__text-body">
+                    Не следует, однако забывать, что укрепление и развитие
+                    структуры требуют определения и уточнения новых предложений.
+                    Равным образом укрепление и развитие структуры влечет за
+                    собой процесс внедрения и модернизации модели развития.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordeon-delivery__body text-light">Доставка по почте России: мелкие пакеты</div>
+          <div class="operator__background bg-block">
+            <div class="operator__container">
+              <div class="operator__wrapper">
+                <div class="operator__img">
+                  <picture
+                    ><source srcset="img/operator.webp" type="image/webp" />
+                    <img
+                      src="img/operator.png"
+                      alt="Попробуйте заказывать с оператором прямо сейчас."
+                  /></picture>
+                </div>
+                <div class="operator__description">
+                  <h3 class="operator__description-title">
+                    Попробуйте заказывать с оператором прямо сейчас. Пришлите
+                    ссылку на товар, его купят и доставят на наш склад в
+                    кратчайшие сроки.
+                  </h3>
+                  <form
+                    class="operator__description-form form-operator"
+                    action="#"
+                  >
+                    <div class="form-operator__input-wrap _icon-link">
+                      <input
+                        class="form-operator__input"
+                        name="input-operator-form"
+                        required=""
+                        type="text"
+                        placeholder="Введите ссылку на товар"
+                      />
+                    </div>
+                    <div class="form-operator__button-wrap">
+                      <button
+                        class="form-operator__button button"
+                        type="submit"
+                      >
+                        Отправить</button
+                      ><span class="form-operator__text"
+                        >Нажимая на кнопку вы подтверждаете согласие с правилами
+                        предоставления услуги и политикой
+                        конфиденциальности</span
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__insurance insurance">
+          <div class="insurance__container">
+            <h2 class="insurance__title title">Страхование</h2>
+            <div
+              class="insurance__accordeon accordeon-operator"
+              data-spollers=""
+              data-one-spoller=""
+            >
+              <div class="accordeon-operator__item">
+                <div
+                  class="accordeon-operator__title title-accordeon-operator"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-operator__title-block">
+                    <h3 class="title-accordeon-operator__title">
+                      Дополнительное страxование
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-operator__info title-accordeon-operator__info_wide"
+                  >
+                    <p
+                      class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt"
+                    >
+                      5% от суммы на которую xотите застраxовать
+                    </p>
+                  </div>
+                </div>
+                <div class="accordeon-operator__body">
+                  <p class="accordeon-operator__text-body">
+                    Не следует, однако забывать, что укрепление и развитие
+                    структуры требуют определения и уточнения новых предложений.
+                    Равным образом укрепление и развитие структуры влечет за
+                    собой процесс внедрения и модернизации модели развития.
+                  </p>
+                </div>
+              </div>
+              <div class="accordeon-operator__item">
+                <div
+                  class="accordeon-operator__title title-accordeon-operator"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-operator__title-block">
+                    <h3 class="title-accordeon-operator__title">
+                      Почта России и ЕМС
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-operator__info title-accordeon-operator__info_wide"
+                  >
+                    <p
+                      class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt"
+                    >
+                      Застраxовано по умолчанию на £50.00
+                    </p>
+                  </div>
+                </div>
+                <div class="accordeon-operator__body">
+                  <p class="accordeon-operator__text-body">
+                    Не следует, однако забывать, что укрепление и развитие
+                    структуры требуют определения и уточнения новых предложений.
+                    Равным образом укрепление и развитие структуры влечет за
+                    собой процесс внедрения и модернизации модели развития.
+                  </p>
+                </div>
+              </div>
+              <div class="accordeon-operator__item">
+                <div
+                  class="accordeon-operator__title title-accordeon-operator"
+                  data-spoller=""
+                >
+                  <div class="title-accordeon-operator__title-block">
+                    <h3 class="title-accordeon-operator__title">
+                      Мелкие пакеты
+                    </h3>
+                  </div>
+                  <div
+                    class="title-accordeon-operator__info title-accordeon-operator__info_wide"
+                  >
+                    <p
+                      class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt"
+                    >
+                      Застраxовано на £20.00
+                    </p>
+                  </div>
+                </div>
+                <div class="accordeon-operator__body">
+                  <p class="accordeon-operator__text-body">
+                    Не следует, однако забывать, что укрепление и развитие
+                    структуры требуют определения и уточнения новых предложений.
+                    Равным образом укрепление и развитие структуры влечет за
+                    собой процесс внедрения и модернизации модели развития.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__socials socials">
+          <div class="socials__background bg-block">
+            <div class="socials__container">
+              <h3 class="socials__title">
+                Остались вопросы? Спросите нас в соцсетях!
+              </h3>
+              <div class="socials__icons-block">
+                <a
+                  class="socials__icon _icon-whatsapp"
+                  href="#"
+                  target="_blank"
+                ></a
+                ><a
+                  class="socials__icon _icon-viber"
+                  href="#"
+                  target="_blank"
+                ></a
+                ><a
+                  class="socials__icon _icon-chat"
+                  href="#"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__icons">
+              <a class="footer__logo" href="/"
+                ><img class="logo" src="img/logo.svg" alt="Логотип"
+              /></a>
+              <div class="footer__socials">
+                <a
+                  class="footer__socials-item _icon-whatsapp"
+                  href="#"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__socials-item _icon-viber"
+                  href="#"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__socials-item _icon-chat"
+                  href="#"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="footer__links">
+              <h5 class="footer__links-title">О компании</h5>
+              <a class="footer__links-link" href="#">Услуги</a
+              ><a class="footer__links-link" href="#">Цены</a
+              ><a class="footer__links-link" href="#">Отзывы</a
+              ><a class="footer__links-link" href="#">Контакты</a
+              ><a class="footer__links-link" href="#">Вакансии</a
+              ><a class="footer__links-link" href="#"
+                >Соглашение о персональных данных</a
+              ><a class="footer__links-link" href="#">Условия использования</a>
+            </div>
+            <div class="footer__links">
+              <h5 class="footer__links-title">Полезное</h5>
+              <a class="footer__links-link" href="#">Как работает наш сервис</a
+              ><a class="footer__links-link" href="#"
+                >Как покупать с оператором</a
+              ><a class="footer__links-link" href="#"
+                >Ответы на частые вопросы</a
+              ><a class="footer__links-link" href="#">Популярные магазины</a
+              ><a class="footer__links-link" href="#">Черный список магазинов</a
+              ><a class="footer__links-link" href="#">Актуальные распродажи</a>
+            </div>
+            <div class="footer__links">
+              <h5 class="footer__links-title">Спецпроекты</h5>
+              <a class="footer__links-link" href="#">50% на первую доставку</a
+              ><a class="footer__links-link" href="#"
+                >Скидки для постоянных клиентов</a
+              ><a class="footer__links-link" href="#">Реферальная программа</a
+              ><a class="footer__links-link" href="#"
+                >Кэшбек Mr. Rebates и Rakuten</a
+              ><a class="footer__links-link" href="#">Stop Fraud</a>
+            </div>
+          </div>
+          <p class="footer__copy">&copy; 2021 Okeypost. Все права защищены.</p>
         </div>
-      </div>
+      </footer>
     </div>
-  </section>
-  <section class="page__operator operator">
-    <div class="operator__container"> 
-      <h2 class="operator__title title">Покупки с операторами Okeypost.com</h2>
-      <div class="operator__accordeon accordeon-operator" data-spollers="" data-one-spoller="">
-        <div class="accordeon-operator__item">
-          <div class="accordeon-operator__title title-accordeon-operator" data-spoller="">
-            <div class="title-accordeon-operator__title-block">
-              <h3 class="title-accordeon-operator__title">Быстрое оформление покупок в интернет-магазинах</h3>
-              <p class="title-accordeon-operator__text">Вы присылаете ссылки, а оформлением заказов занимаются операторы Почтой.ком. Они сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.</p>
-            </div>
-            <div class="title-accordeon-operator__info">
-              <p class="title-accordeon-operator__info-text">5% от стоимости товаров минимум £7 для каждого магазина, но не менее £7 для каждого лота eBay</p>
-            </div>
-          </div>
-          <div class="accordeon-operator__body">
-            <p class="accordeon-operator__text-body">Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.</p>
-          </div>
-        </div>
-        <div class="accordeon-operator__item">
-          <div class="accordeon-operator__title title-accordeon-operator" data-spoller="">
-            <div class="title-accordeon-operator__title-block">
-              <h3 class="title-accordeon-operator__title">Фото товара по услуге "Покупка с операторами"</h3>
-              <p class="title-accordeon-operator__text">Три фото выбранного вами товара, приобретенного по услуге "Полное сопровождение"</p>
-            </div>
-            <div class="title-accordeon-operator__info">
-              <p class="title-accordeon-operator__info-text">£2</p>
-            </div>
-          </div>
-          <div class="accordeon-operator__body">
-            <p class="accordeon-operator__text-body">Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="operator__background bg-block"> 
-      <div class="operator__container">
-        <div class="operator__wrapper">
-          <div class="operator__img"> <picture><source srcset="img/operator.webp" type="image/webp"><img src="img/operator.png" alt="Попробуйте заказывать с оператором прямо сейчас."/></picture></div>
-          <div class="operator__description">
-            <h3 class="operator__description-title">Попробуйте заказывать с оператором прямо сейчас. Пришлите ссылку на товар, его купят и доставят на наш склад в кратчайшие сроки.</h3>
-            <form class="operator__description-form form-operator" action="#"> 
-              <div class="form-operator__input-wrap _icon-link">
-                <input class="form-operator__input" name="input-operator-form" required="" type="text" placeholder="Введите ссылку на товар"/>
+    <div id="popup" aria-hidden="true" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <button data-close type="button" class="popup__close">
+            <img src="img/popup/cross.svg" alt="Закрыть" />
+          </button>
+          <div class="popup__body">
+            <h6 class="popup__title">Выполните вход в ваш личный кабинет</h6>
+            <form id="login" action="#" class="popup__form form-login">
+              <div class="form-login__wrap-input">
+                <label class="form-login__label" for="login-tel"
+                  >Номер телефона:</label
+                >
+                <input
+                  class="form-login__input"
+                  id="login-tel"
+                  name="login-tel"
+                  type="tel"
+                  required
+                />
               </div>
-              <div class="form-operator__button-wrap"> 
-                <button class="form-operator__button button" type="submit">Отправить</button><span class="form-operator__text">Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности</span>
+              <div class="form-login__wrap-input">
+                <label class="form-login__label" for="login-email"
+                  >Ваш email:</label
+                >
+                <input
+                  class="form-login__input"
+                  id="login-email"
+                  name="login-email"
+                  type="email"
+                  required
+                />
+              </div>
+              <div class="form-login__wrap-input">
+                <label class="form-login__label" for="login-password"
+                  >Ваш пароль:</label
+                >
+                <input
+                  class="form-login__input"
+                  id="login-password"
+                  name="login-password"
+                  type="password"
+                  required
+                />
               </div>
             </form>
+            <p class="popup__text">
+              <a href="#" class="popup__link">Восстановление пароля</a> или
+              <a href="#" class="popup__link">быстрая регистрация</a>
+            </p>
+            <div class="popup__buttons-block">
+              <button form="login" class="popup__button button" type="submit">
+                Войти
+              </button>
+              <div class="popup__socials">
+                <a href="#" class="popup__item-socials" target="_blank"
+                  ><img src="img/popup/socials/google.svg" alt="google" /></a
+                ><a href="#" class="popup__item-socials" target="_blank"
+                  ><img
+                    src="img/popup/socials/facebook.svg"
+                    alt="facebook" /></a
+                ><a href="#" class="popup__item-socials" target="_blank"
+                  ><img src="img/popup/socials/vk.svg" alt="vkontakte"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="page__insurance insurance"> 
-    <div class="insurance__container"> 
-      <h2 class="insurance__title title">Страхование</h2>
-      <div class="insurance__accordeon accordeon-operator" data-spollers="" data-one-spoller="">
-        <div class="accordeon-operator__item">
-          <div class="accordeon-operator__title title-accordeon-operator" data-spoller="">
-            <div class="title-accordeon-operator__title-block">
-              <h3 class="title-accordeon-operator__title">Дополнительное страxование</h3>
-            </div>
-            <div class="title-accordeon-operator__info title-accordeon-operator__info_wide">
-              <p class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt">5% от суммы на которую xотите застраxовать</p>
-            </div>
-          </div>
-          <div class="accordeon-operator__body">
-            <p class="accordeon-operator__text-body">Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.</p>
-          </div>
-        </div>
-        <div class="accordeon-operator__item">
-          <div class="accordeon-operator__title title-accordeon-operator" data-spoller="">
-            <div class="title-accordeon-operator__title-block">
-              <h3 class="title-accordeon-operator__title">Почта России и ЕМС</h3>
-            </div>
-            <div class="title-accordeon-operator__info title-accordeon-operator__info_wide">
-              <p class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt">Застраxовано по умолчанию на £50.00</p>
-            </div>
-          </div>
-          <div class="accordeon-operator__body">
-            <p class="accordeon-operator__text-body">Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.</p>
-          </div>
-        </div>
-        <div class="accordeon-operator__item">
-          <div class="accordeon-operator__title title-accordeon-operator" data-spoller="">
-            <div class="title-accordeon-operator__title-block">
-              <h3 class="title-accordeon-operator__title">Мелкие пакеты</h3>
-            </div>
-            <div class="title-accordeon-operator__info title-accordeon-operator__info_wide">
-              <p class="title-accordeon-operator__info-text title-accordeon-operator__info-text_border_shirt">Застраxовано на £20.00</p>
-            </div>
-          </div>
-          <div class="accordeon-operator__body">
-            <p class="accordeon-operator__text-body">Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="page__socials socials">
-    <div class="socials__background bg-block">
-      <div class="socials__container">
-        <h3 class="socials__title">Остались вопросы? Спросите нас в соцсетях!</h3>
-        <div class="socials__icons-block"><a class="socials__icon _icon-whatsapp" href="#" target="_blank"></a><a class="socials__icon _icon-viber" href="#" target="_blank"></a><a class="socials__icon _icon-chat" href="#" target="_blank"></a></div>
-      </div>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="footer__container">
-    <div class="footer__body"> 
-      <div class="footer__icons"> <a class="footer__logo" href="/"><img class="logo" src="img/logo.svg" alt="Логотип"/></a>
-        <div class="footer__socials"> <a class="footer__socials-item _icon-whatsapp" href="#" target="_blank"></a><a class="footer__socials-item _icon-viber" href="#" target="_blank"></a><a class="footer__socials-item _icon-chat" href="#" target="_blank"></a></div>
-      </div>
-      <div class="footer__links">
-        <h5 class="footer__links-title">О компании</h5><a class="footer__links-link" href="#">Услуги</a><a class="footer__links-link" href="#">Цены</a><a class="footer__links-link" href="#">Отзывы</a><a class="footer__links-link" href="#">Контакты</a><a class="footer__links-link" href="#">Вакансии</a><a class="footer__links-link" href="#">Соглашение о персональных данных</a><a class="footer__links-link" href="#">Условия использования</a>
-      </div>
-      <div class="footer__links">
-        <h5 class="footer__links-title">Полезное</h5><a class="footer__links-link" href="#">Как работает наш сервис</a><a class="footer__links-link" href="#">Как покупать с оператором</a><a class="footer__links-link" href="#">Ответы на частые вопросы</a><a class="footer__links-link" href="#">Популярные магазины</a><a class="footer__links-link" href="#">Черный список магазинов</a><a class="footer__links-link" href="#">Актуальные распродажи</a>
-      </div>
-      <div class="footer__links">
-        <h5 class="footer__links-title">Спецпроекты</h5><a class="footer__links-link" href="#">50% на первую доставку</a><a class="footer__links-link" href="#">Скидки для постоянных клиентов</a><a class="footer__links-link" href="#">Реферальная программа</a><a class="footer__links-link" href="#">Кэшбек Mr. Rebates и Rakuten</a><a class="footer__links-link" href="#">Stop Fraud</a>
-      </div>
-    </div>
-    <p class="footer__copy">&copy; 2021 Okeypost. Все права защищены.</p>
-  </div>
-</footer></div><div id="popup" aria-hidden="true" class="popup">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <button data-close type="button" class="popup__close">
-        <img src="img/popup/cross.svg" alt="Закрыть" />
-      </button>
-      <div class="popup__body">
-        <h6 class="popup__title">Выполните вход в ваш личный кабинет</h6>
-        <form id="login" action="#" class="popup__form form-login">
-          <div class="form-login__wrap-input">
-            <label class="form-login__label" for="login-tel"
-              >Номер телефона:</label
-            >
-            <input
-              class="form-login__input"
-              id="login-tel"
-              name="login-tel"
-              type="tel"
-              required
-            />
-          </div>
-          <div class="form-login__wrap-input">
-            <label class="form-login__label" for="login-email"
-              >Ваш email:</label
-            >
-            <input
-              class="form-login__input"
-              id="login-email"
-              name="login-email"
-              type="email"
-              required
-            />
-          </div>
-          <div class="form-login__wrap-input">
-            <label class="form-login__label" for="login-password"
-              >Ваш пароль:</label
-            >
-            <input
-              class="form-login__input"
-              id="login-password"
-              name="login-password"
-              type="password"
-              required
-            />
-          </div>
-        </form>
-        <p class="popup__text">
-          <a href="#" class="popup__link">Восстановление пароля</a> или
-          <a href="#" class="popup__link">быстрая регистрация</a>
-        </p>
-        <div class="popup__buttons-block">
-          <button form="login" class="popup__button button" type="submit">
-            Войти
-          </button>
-          <div class="popup__socials">
-            <a href="#" class="popup__item-socials" target="_blank"
-              ><img src="img/popup/socials/google.svg" alt="google" /></a
-            ><a href="#" class="popup__item-socials" target="_blank"
-              ><img src="img/popup/socials/facebook.svg" alt="facebook" /></a
-            ><a href="#" class="popup__item-socials" target="_blank"
-              ><img src="img/popup/socials/vk.svg" alt="vkontakte"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script src="js/app.min.js?_v=20220615195740"></script>
-</body>
+    <script src="js/app.min.js?_v=20220615195740"></script>
+  </body>
 </html>
