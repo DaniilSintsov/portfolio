@@ -1,0 +1,68 @@
+<div id="popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="img/popup/cross.svg" alt="Закрыть" />
+      </button>
+      <div class="popup__body">
+        <h6 class="popup__title">Выполните вход в ваш личный кабинет</h6>
+        <form id="login" action="#" class="popup__form form-login">
+          <div class="form-login__wrap-input">
+            <label class="form-login__label" for="login-tel"
+              >Номер телефона:</label
+            >
+            <input
+              class="form-login__input"
+              id="login-tel"
+              name="login-tel"
+              type="tel"
+              required
+            />
+          </div>
+          <div class="form-login__wrap-input">
+            <label class="form-login__label" for="login-email"
+              >Ваш email:</label
+            >
+            <input
+              class="form-login__input"
+              id="login-email"
+              name="login-email"
+              type="email"
+              required
+            />
+          </div>
+          <div class="form-login__wrap-input">
+            <label class="form-login__label" for="login-password"
+              >Ваш пароль:</label
+            >
+            <input
+              class="form-login__input"
+              id="login-password"
+              name="login-password"
+              type="password"
+              required
+            />
+          </div>
+        </form>
+        <p class="popup__text">
+          <a href="#" class="popup__link">Восстановление пароля</a> или
+          <a href="#" class="popup__link">быстрая регистрация</a>
+        </p>
+        <div class="popup__buttons-block">
+          <button form="login" class="popup__button button" type="submit">
+            Войти
+          </button>
+          <div class="popup__socials">
+            <a href="#" class="popup__item-socials" target="_blank"
+              ><img src="img/popup/socials/google.svg" alt="google" /></a
+            ><a href="#" class="popup__item-socials" target="_blank"
+              ><img src="img/popup/socials/facebook.svg" alt="facebook" /></a
+            ><a href="#" class="popup__item-socials" target="_blank"
+              ><img src="img/popup/socials/vk.svg" alt="vkontakte"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

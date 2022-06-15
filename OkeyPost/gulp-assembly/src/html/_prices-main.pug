@@ -1,0 +1,228 @@
+main.page
+  //- 1-й экран
+  section.page__submission.submission
+    .submission__background.bg-block
+      .submission__container
+        .submission__breadcrumps
+          a.submission__link(href="/") Главная
+          |  / 
+          a.submission__link(href="prices.html") Цены
+        h1.submission__title Услуги доставки из Великобритании
+
+  //- 2-й экран
+  section.page__services.services
+    .services__container
+      .services__item 
+        .services__img 
+          img(src="img/services/01.png", alt="Ваш личный адрес для покупок")
+        .services__description 
+          h3.services__title Ваш личный адрес для покупок
+          p.services__text на нашем современном автоматизированном складе в безналоговом Делавэре
+          a.services__link(href='#') Бесплатно
+      .services__item 
+        .services__img 
+          img(src="img/services/02.png", alt="Объединение нескольких посылок в одну")
+        .services__description 
+          h3.services__title Объединение нескольких посылок в одну
+          p.services__text ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной
+          a.services__link(href='#') от £10.00
+      .services__item 
+        .services__img 
+          img(src="img/services/03.png", alt="Усиленная упаковка по запросу")
+        .services__description 
+          h3.services__title Усиленная упаковка по запросу
+          p.services__text Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.
+          a.services__link(href='#') от £0.25
+      .services__item 
+        .services__img 
+          img(src="img/services/04.png", alt="Хранение входящих посылок 30 дней")
+        .services__description 
+          h3.services__title Хранение входящих посылок 30 дней
+          p.services__text чем больше срок хранения посылок на складе – тем больше вы сможете собрать
+          a.services__link(href='#') Бесплатно
+
+  //- 3-й экран
+  section.page__delivery.delivery 
+    .delivery__container
+      h2.delivery__title.delivery__title_page_prices.title Онлайн-калькулятор стоимости доставки товара
+      p.delivery__text.text-light Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.
+      form.delivery__form.calc-form(action="#") 
+        .calc-form__inputs-block 
+          .calc-form__select.select-calc
+            label.select-calc__label(for="calc-select-country") Страна:
+            .select-calc__select-wrapper._icon-globus
+              select#calc-select-country.select-calc__select(name="calc-select-country") 
+                option(value="1" selected) Россия
+                option(value="2") Казахстан
+                option(value="3") Белоруссия
+                option(value="4") Турция
+
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-city") Город:
+            .input-calc__input-wrapper._icon-building
+              input#calc-city.input-calc__input(name="calc-city" type="text" required=''  value="Москва")
+          
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-index") Индекс:
+            .input-calc__input-wrapper._icon-notebook
+              input#calc-index.input-calc__input(name="calc-index" type="text" required='' placeholder="Введите индекс")
+
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-weight") Вес посылки:
+            .input-calc__input-wrapper._icon-barbell
+              input#calc-weight.input-calc__input(name="calc-weight" type="text" required='' value="0,5")
+
+          .calc-form__select.select-calc
+            label.select-calc__label(for="calc-select-service") Дополнительные услуги:
+            .select-calc__select-wrapper._icon-textdoc
+              select#calc-select-service.select-calc__select(name="calc-select-service") 
+                option(disabled selected) Выберите услуги
+                option(value="1") Услуга
+                option(value="2") Услуга
+                option(value="3") Услуга
+
+        button.calc-form__button.button(type="submit") Рассчитать
+      h2.delivery__title.title Варианты доставки:
+      .delivery__accordeon.accordeon-delivery(data-spollers='' data-one-spoller='')
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post.svg", alt="Почта России")
+              h3.title-accordeon-delivery__heading-title Почта России
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 10-14 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £27.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £41.99
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Обычная доставка по почте России
+
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post-esm.svg", alt="EMS ПОЧТА РОССИЯ")
+              h3.title-accordeon-delivery__heading-title EMS ПОЧТА РОССИЯ
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 9-12 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £40.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £54.55
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Доставка по почте России: ESM
+
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post-small.svg", alt="Почта России")
+              h3.title-accordeon-delivery__heading-title ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 10-14 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £13.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £90.50
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Доставка по почте России: мелкие пакеты
+
+  //- 4-й экран
+  section.page__operator.operator
+    .operator__container 
+      h2.operator__title.title Покупки с операторами Okeypost.com
+      .operator__accordeon.accordeon-operator(data-spollers='' data-one-spoller='')
+        .accordeon-operator__item
+          .accordeon-operator__title.title-accordeon-operator(data-spoller='')
+            .title-accordeon-operator__title-block
+              h3.title-accordeon-operator__title Быстрое оформление покупок в интернет-магазинах
+              p.title-accordeon-operator__text Вы присылаете ссылки, а оформлением заказов занимаются операторы Почтой.ком. Они сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.
+            .title-accordeon-operator__info
+              p.title-accordeon-operator__info-text 5% от стоимости товаров минимум £7 для каждого магазина, но не менее £7 для каждого лота eBay
+          .accordeon-operator__body
+            p.accordeon-operator__text-body Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.
+
+        .accordeon-operator__item
+                  .accordeon-operator__title.title-accordeon-operator(data-spoller='')
+                    .title-accordeon-operator__title-block
+                      h3.title-accordeon-operator__title Фото товара по услуге "Покупка с операторами"
+                      p.title-accordeon-operator__text Три фото выбранного вами товара, приобретенного по услуге "Полное сопровождение"
+                    .title-accordeon-operator__info
+                      p.title-accordeon-operator__info-text £2
+                  .accordeon-operator__body
+                    p.accordeon-operator__text-body Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.
+    .operator__background.bg-block 
+      .operator__container
+        .operator__wrapper
+          .operator__img 
+            img(src="img/operator.png", alt="Попробуйте заказывать с оператором прямо сейчас.")
+          .operator__description
+            h3.operator__description-title Попробуйте заказывать с оператором прямо сейчас. Пришлите ссылку на товар, его купят и доставят на наш склад в кратчайшие сроки.
+            form.operator__description-form.form-operator(action="#") 
+              .form-operator__input-wrap._icon-link
+                input.form-operator__input(name='input-operator-form' required=''  type="text" placeholder="Введите ссылку на товар")
+              .form-operator__button-wrap 
+                button.form-operator__button.button(type="submit") Отправить
+                span.form-operator__text Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности
+
+  //- 5-й экран
+  section.page__insurance.insurance 
+    .insurance__container 
+      h2.insurance__title.title Страхование
+      .insurance__accordeon.accordeon-operator(data-spollers='' data-one-spoller='')
+        .accordeon-operator__item
+          .accordeon-operator__title.title-accordeon-operator(data-spoller='')
+            .title-accordeon-operator__title-block
+              h3.title-accordeon-operator__title Дополнительное страxование
+            .title-accordeon-operator__info.title-accordeon-operator__info_wide
+              p.title-accordeon-operator__info-text.title-accordeon-operator__info-text_border_shirt 5% от суммы на которую xотите застраxовать
+          .accordeon-operator__body
+            p.accordeon-operator__text-body Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.
+
+        .accordeon-operator__item
+          .accordeon-operator__title.title-accordeon-operator(data-spoller='')
+            .title-accordeon-operator__title-block
+              h3.title-accordeon-operator__title Почта России и ЕМС
+            .title-accordeon-operator__info.title-accordeon-operator__info_wide
+              p.title-accordeon-operator__info-text.title-accordeon-operator__info-text_border_shirt Застраxовано по умолчанию на £50.00
+          .accordeon-operator__body
+            p.accordeon-operator__text-body Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.
+
+        .accordeon-operator__item
+          .accordeon-operator__title.title-accordeon-operator(data-spoller='')
+            .title-accordeon-operator__title-block
+              h3.title-accordeon-operator__title Мелкие пакеты
+            .title-accordeon-operator__info.title-accordeon-operator__info_wide
+              p.title-accordeon-operator__info-text.title-accordeon-operator__info-text_border_shirt Застраxовано на £20.00
+          .accordeon-operator__body
+            p.accordeon-operator__text-body Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.
+
+  //- 6-й экран
+  section.page__socials.socials
+    .socials__background.bg-block
+      .socials__container
+        h3.socials__title Остались вопросы? Спросите нас в соцсетях!
+        .socials__icons-block
+          a.socials__icon._icon-whatsapp(href='#' target='_blank')
+          a.socials__icon._icon-viber(href='#' target='_blank')
+          a.socials__icon._icon-chat(href='#' target='_blank')

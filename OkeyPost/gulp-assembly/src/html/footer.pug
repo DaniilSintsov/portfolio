@@ -1,0 +1,42 @@
+footer.footer
+  .footer__container
+    .footer__body 
+      .footer__icons 
+        if is_not_main_page
+          a.footer__logo(href="/")
+            img.logo(src="img/logo.svg", alt="Логотип")
+        else 
+          .footer__logo
+            img.logo(src="img/logo.svg", alt="Логотип")
+        .footer__socials 
+          a.footer__socials-item._icon-whatsapp(href='#' target='_blank')
+          a.footer__socials-item._icon-viber(href='#' target='_blank')
+          a.footer__socials-item._icon-chat(href='#' target='_blank')
+
+      .footer__links
+        h5.footer__links-title О компании
+        a.footer__links-link(href='#') Услуги
+        a.footer__links-link(href='#') Цены
+        a.footer__links-link(href='#') Отзывы
+        a.footer__links-link(href='#') Контакты
+        a.footer__links-link(href='#') Вакансии
+        a.footer__links-link(href='#') Соглашение о персональных данных
+        a.footer__links-link(href='#') Условия использования
+
+      .footer__links
+        h5.footer__links-title Полезное
+        a.footer__links-link(href='#') Как работает наш сервис
+        a.footer__links-link(href='#') Как покупать с оператором
+        a.footer__links-link(href='#') Ответы на частые вопросы
+        a.footer__links-link(href='#') Популярные магазины
+        a.footer__links-link(href='#') Черный список магазинов
+        a.footer__links-link(href='#') Актуальные распродажи
+
+      .footer__links
+        h5.footer__links-title Спецпроекты
+        a.footer__links-link(href='#') 50% на первую доставку
+        a.footer__links-link(href='#') Скидки для постоянных клиентов
+        a.footer__links-link(href='#') Реферальная программа
+        a.footer__links-link(href='#') Кэшбек Mr. Rebates и Rakuten
+        a.footer__links-link(href='#') Stop Fraud
+    p.footer__copy &copy; 2021 Okeypost. Все права защищены.

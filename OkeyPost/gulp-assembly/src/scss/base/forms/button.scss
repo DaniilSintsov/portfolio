@@ -1,0 +1,18 @@
+// <BUTTON>
+.button {
+  display: inline-block;
+  background-color: #00c97b;
+  border-radius: rem(36);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #00a164;
+    }
+  }
+  &._fw {
+    width: 100%;
+  }
+}

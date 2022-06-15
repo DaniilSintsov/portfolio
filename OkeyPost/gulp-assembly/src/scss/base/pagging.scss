@@ -1,0 +1,46 @@
+.pagging {
+  @include adaptiveValue('margin-top', 50, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(3);
+  // .pagging__arrow
+  &__arrow {
+    height: rem(42);
+    flex: 0 0 rem(42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #C0C9D7;
+    border: 1px solid #C0C9D7;
+  }
+
+  // .pagging__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(3);
+
+    li {
+    }
+  }
+
+  // .pagging__item
+  &__item {
+    height: rem(42);
+    width: rem(42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #C0C9D7;
+    color: #C0C9D7;
+
+    &._active {
+      border: 1px solid #01CD7D;
+      color: #01CD7D;
+    }
+  }
+}

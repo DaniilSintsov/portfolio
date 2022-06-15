@@ -1,0 +1,35 @@
+header.header
+  .header__wrap
+    .header__container 
+      if is_not_main_page
+        a.header__logo(href="/")
+          img.logo(src="img/logo.svg", alt="Логотип")
+      else 
+        img.header__logo.logo(src="img/logo.svg", alt="Логотип")
+
+      .header__menu.menu-header 
+        nav.menu-header__body(data-da=".burger-menu__body, 767.98, first")
+          ul.menu-header__list 
+            li.menu-header__item 
+              a.menu-header__link(href="buy.html") Как покупать
+            li.menu-header__item 
+              a.menu-header__link(href="sales.html") Распродажи
+            li.menu-header__item 
+              a.menu-header__link(href="prices.html") Цены
+            li.menu-header__item 
+              a.menu-header__link(href="questions.html") Помощь
+            li.menu-header__item 
+              a.menu-header__link(href="bonuses.html") Бонусы
+            li.menu-header__item 
+              a.menu-header__link(href="blog.html") Блог
+            li.menu-header__item 
+              a.menu-header__link(href="stores.html") Магазины
+
+      .header__contact.contact-header(data-da=".burger-menu__body, 767.98, last")
+        a._icon-user.contact-header__login-link(href="#" data-popup="#popup") Вход
+        a.contact-header__contact-link.button(href="#") Связаться с нами
+
+      .header__burger-menu.burger-menu
+        button.burger-menu__icon-menu.icon-menu(type='button')
+          span 
+        .burger-menu__body

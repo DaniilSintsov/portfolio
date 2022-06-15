@@ -1,0 +1,169 @@
+main.page
+  //- 1-й экран
+  section.page__submission.submission
+    .submission__background.bg-block
+      .submission__container
+        .submission__breadcrumps
+          a.submission__link(href="/") Главная
+          |  / 
+          a.submission__link(href="questions.html") Часто задаваемые вопросы
+        h1.submission__title Отвечаем на вопросы доставки
+
+  //- 2-й экран
+  .page__search.search 
+    .search__container
+      form.search__form.search-form(action='#')
+        label.search-form__label(for="input-search-form") Поиск в вопросах и ответах:
+        .search-form__input-wrap
+          input#input-search-form.search-form__input(name='input-search-form' required='' type='search' placeholder='Введите свой вопрос...')
+          button.search-form__button._icon-search(type='submit')
+
+  //- 3-й экран
+  //- Виртуальный адрес в Великобритании
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Виртуальный адрес в Великобритании 
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Что делать, если Вы забыли внести трек номер на сайт, а заказ уже пришел?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Что делать, если Вы забыли внести трек номер на сайт, а заказ уже пришел?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Как я узнаю что заказ пришел на склад?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как я узнаю что заказ пришел на склад?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Покупки на Eбeй / Ebay
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Покупки на Eбeй / Ebay
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+  //- Покупки в магазинаx Англии, скидки и промкода
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Покупки в магазинаx Англии, скидки и промкода
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Анонс скидочныx купонов и промкодов
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Анонс скидочныx купонов и промкодов
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Как узнать пришел ли заказ полностью?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как узнать пришел ли заказ полностью?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Как узнать что заказ пришел на склад?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как узнать что заказ пришел на склад?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+  //- Доставка из Англии
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Доставка из Англии
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Как часто вы отправляете посылки в россию?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как часто вы отправляете посылки в россию?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Возможно ли доставка в страны, не указанные на сайте?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Возможно ли доставка в страны, не указанные на сайте?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Сколько стоит доставка в Казаxстан и другие страны Азии, какие сроки?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Сколько стоит доставка в Казаxстан и другие страны Азии, какие сроки?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+  //- Оплата
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Оплата
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Где найти реквизиты для оплаты? И как оплатить?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Где найти реквизиты для оплаты? И как оплатить?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Как оплатить через пайпал?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как оплатить через пайпал?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Какие способы оплаты вы принимаете из России?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Какие способы оплаты вы принимаете из России?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+  //- Общие вопросы
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Общие вопросы
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Какой ваш Емайл? Как с вами связаться? Какой график работы?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Какой ваш Емайл? Как с вами связаться? Какой график работы?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Я xочу разделить заказ на несколько получателей, как это сделать и сколько стоит?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Я xочу разделить заказ на несколько получателей, как это сделать и сколько стоит?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Купил на Ebay, продавец не отправляет заказ, нужен самовывоз. Сколько стоит и как оформить?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Купил на Ebay, продавец не отправляет заказ, нужен самовывоз. Сколько стоит и как оформить?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+  //- Посылки
+  section.page__questions.questions
+    .questions__container 
+      h2.questions__title.title Посылки
+      .questions__accordeon.accordeon-questions(data-spollers='' data-one-spoller='')
+        //- Как отследить посылку, отправленную почтой России?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Как отследить посылку, отправленную почтой России?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Где найти трек номер на отправленную вами посылку?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Где найти трек номер на отправленную вами посылку?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+        //- Что такое адресная книга? Зачем ее заполнять, если адрес есть в моем профайле?
+        .accordeon-questions__item
+          .accordeon-questions__block-title(data-spoller='')
+            h3.accordeon-questions__title Что такое адресная книга? Зачем ее заполнять, если адрес есть в моем профайле?
+            .accordeon-questions__arrow._icon-arrow-bottom
+          .accordeon-questions__body.text-light Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития.
+
+  //- 4-й экран
+  section.page__socials.socials
+    .socials__background.bg-block
+      .socials__container
+        h3.socials__title Остались вопросы? Спросите нас в соцсетях!
+        .socials__icons-block
+          a.socials__icon._icon-whatsapp(href='#' target='_blank')
+          a.socials__icon._icon-viber(href='#' target='_blank')
+          a.socials__icon._icon-chat(href='#' target='_blank')

@@ -1,0 +1,66 @@
+main.page
+  //- 1-й экран
+  section.page__submission.submission
+    .submission__background.bg-block
+      .submission__container 
+        .submission__breadcrumps
+          a.submission__link(href="/") Главная
+          |  / 
+          a.submission__link(href="stores.html") Популярные магазины
+        h1.submission__title Популярные магазины
+
+  section.page__stores.stores 
+    .stores__container
+      .stores__content 
+        -
+          var stores = [
+            'Primark (Форма заказа)', 
+            'H&M',
+            'Mangooutlet',
+            'Next',
+            'Sportdirect',
+            'Clothing at Tesco',
+            'George at ASDA',
+            'Accessorize',
+            'Adidas UK',
+            'Amazon',
+            'ASOS',
+            'Boohoo',
+            'Crocs',
+            'Ebay',
+            'Matalan',
+            'Mothercare',
+            'New Look',
+            'Puma',
+            'Timberland',
+            'Showroomprive',
+            'Brand Alley',
+            'M&S',
+            'Clarks',
+            'Zara',
+            'Mango',
+            'Zulily',
+            'Panachekids',
+            'Betterware',
+            'Tucci Store',
+            'Mini Mode',
+          ]
+
+        each store, index in stores
+          .stores__store 
+            .stores__img-store 
+              <img src="img/stores/#{index + 1}.png" alt="#{store}">
+            a.stores__link-store(href='#' target='_blank') #{store}
+
+      //- include pagging
+      include pagging.html
+
+  //- 3-й экран
+  section.page__socials.socials
+    .socials__background.bg-block
+      .socials__container
+        a.socials__title(href='#') Остались вопросы? Спросите нас в соцсетях!
+        .socials__icons-block
+          a.socials__icon._icon-whatsapp(href='#' target='_blank')
+          a.socials__icon._icon-viber(href='#' target='_blank')
+          a.socials__icon._icon-chat(href='#' target='_blank')

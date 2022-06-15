@@ -1,0 +1,16 @@
+// <RATING>
+.rating {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      font-size: rem(18);
+      color: #ffa009;
+    }
+  }
+}

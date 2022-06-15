@@ -1,0 +1,1171 @@
+main.page
+  //- 1-й экран
+  section.page__hello.hello 
+    .hello__background.bg-block
+      .hello__container
+        .hello__text.text-hello
+          h1.text-hello__title Доставка товаров из Великобритании в Россию
+          p.text-hello__text.text-light Начните экономить до 80% на шопинге. Регистрируйтесь в OkeyPost, чтобы покупать со скидками в UK одежду, обувь, гаджеты известных брендов и безопасно отправлять вещи в Россию.
+          div 
+            a.text-hello__link.button(href="#") Получить адрес в UK
+        .hello__image 
+          img(src="img/hello-img.png", alt="OkeyPost")
+
+  //- 2-й экран
+  section.page__offer.offer 
+    .offer__container(data-tabs='')
+      h2.offer__title.title Насколько выгодно <br> покупать?
+
+      .offer__slider-goods.goods-offer-slider
+        //- Оболочка слайдера 
+        .goods-offer-slider__slider.swiper 
+          //- Двигающееся часть слайдера
+          .goods-offer-slider__wrapper.swiper-wrapper(data-tabs-titles='')
+            //- Слайд
+            .goods-offer-slider__slide.swiper-slide._tab-active
+              img(src="img/icons/goods-offer-slider/clothes.svg", alt="Одежда")
+              p Одежда
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/electronics.svg", alt="Одежда")
+              p Электроника
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/accessories.svg", alt="Одежда")
+              p Аксессуары
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/kids.svg", alt="Одежда")
+              p Для детей
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/sport.svg", alt="Одежда")
+              p Для спорта
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/cosmetics.svg", alt="Одежда")
+              p Косметика
+            .goods-offer-slider__slide.swiper-slide
+              img(src="img/icons/goods-offer-slider/clothes.svg", alt="Одежда")
+              p Что-то еще
+
+          button.goods-offer-slider__button-prev.swiper-button-prev(type="button")
+            img(src="img/icons/goods-offer-slider/arrow-prev.svg", alt="arrow")
+          button.goods-offer-slider__button-next.swiper-button-next(type="button")
+            img(src="img/icons/goods-offer-slider/arrow-next.svg", alt="arrow")
+
+      .offer__slider-main.main-offer-slider
+        //- Оболочка слайдера 
+        .main-offer-slider__slider.swiper
+          //- Двигающееся часть слайдера
+          .main-offer-slider__wrapper.swiper-wrapper(data-tabs-body='')
+            //- Слайд 1
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_1-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_1-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_1-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_1-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_1-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_1-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_1-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_1-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_1-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 2
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_2-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_2-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_2-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_2-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_2-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_2-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_2-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_2-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_2-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 3
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_3-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_3-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_3-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_3-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_3-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_3-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_3-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_3-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_3-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 4
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_4-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_4-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_4-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_4-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_4-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_4-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_4-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_4-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_4-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 5
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_5-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_5-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_5-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_5-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_5-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_5-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_5-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_5-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_5-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 6
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_6-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_6-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_6-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_6-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_6-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_6-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_6-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_6-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_6-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+            //- Слайд 7
+            .main-offer-slider__slide.main-slide.swiper-slide
+              .main-slide__slider-products.products-offer-slider
+                //- Оболочка слайдера 
+                .products-offer-slider__slider.swiper 
+                  //- Двигающееся часть слайдера
+                  .products-offer-slider__wrapper.swiper-wrapper
+                    //- Слайд 1
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_7-1, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                      .products-slide__center.products-slide__center_7-1.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_7-1, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                    //- Слайд 2
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_7-2, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                      .products-slide__center.products-slide__center_7-2.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_7-2, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+
+                    //- Слайд 3
+                    .products-offer-slider__slide.products-slide.swiper-slide
+                      .products-slide__left.left-products-slide
+                        .left-products-slide__content
+                          h3.left-products-slide__name(data-da=".products-slide__center_7-3, 767.98, first") Columbia Barlow Pass 550 Turbodown Jacket
+                          .left-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/russian-flag.png", alt="russian flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в России
+                              span.flag-products-slide__price 7891,46₽
+                        .left-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jeans.svg", alt="")
+
+                      .products-slide__center.products-slide__center_7-3.center-products-slide
+                        .center-products-slide__image
+                          img(src="img/icons/products-offer-slider/t-shirt.svg", alt="")
+                        .center-products-slide__info 
+                          span.center-products-slide__delivery Срок доставки примерно 10 дней
+                          span.center-products-slide__savings Вы экономите до <span class="price">$119.56</span>
+
+                      .products-slide__right.right-products-slide
+                        .right-products-slide__content
+                          h3.right-products-slide__title(data-da=".products-slide__center_7-3, 767.98, 0") Доставка одежды из Великобритании от <span class="price">£7.79</span>
+                          .right-products-slide__flag.flag-products-slide
+                            .flag-products-slide__image
+                              img(src="img/icons/products-offer-slider/uk-flag.png", alt="uk flag")
+                            .flag-products-slide__price-block
+                              span.flag-products-slide__info Цена в UK
+                              span.flag-products-slide__price.price £80.62
+                        .right-products-slide__preview.preview-products-slide
+                          .preview-products-slide__image
+                            img(src="img/icons/products-offer-slider/jacket.svg", alt="")
+
+                  button.products-offer-slider__button-prev.swiper-button-prev(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-prev.svg", alt="arrow")
+                  button.products-offer-slider__button-next.swiper-button-next(type="button")
+                    img(src="img/icons/products-offer-slider/arrow-next.svg", alt="arrow")
+
+      .offer__advantages.advantages-offer
+        .advantages-offer__advantage
+          .advantages-offer__image
+            img(src="img/icons/advantages/savings.svg", alt="Экономия")
+          span.advantages-offer__info Экономия <br> до 70%
+
+        .advantages-offer__advantage
+          .advantages-offer__image
+            img(src="img/icons/advantages/products.svg", alt="Продукция")
+          span.advantages-offer__info Только подлинная <br> продукция
+
+        .advantages-offer__advantage
+          .advantages-offer__image
+            img(src="img/icons/advantages/delivery.svg", alt="Доставка")
+          span.advantages-offer__info Оперативная <br> доставка
+
+        .advantages-offer__advantage
+          .advantages-offer__image
+            img(src="img/icons/advantages/choice.svg", alt="Большой выбор")
+          span.advantages-offer__info Огромный <br> выбор товаров
+
+  //- 3-й экран
+  section.page__try.try 
+    .try__background.bg-block
+      .try__container
+        .try__image 
+          img(src="img/try-img.png", alt="OkeyPost try")
+        .try__text.text-try
+          h3.text-try__title Поручите нашим мастерам шопинга оформить заказы в английских магазинах и освободите время для более важных дел.
+          p.text-try__text.text-light Такой способ покупки также подойдёт, если магазин принимает только английские карты.
+          div 
+            a.text-try__link.button(href="#") Попробовать
+
+  //- 4-й экран
+  section.page__delivery.delivery 
+    .delivery__container
+      h2.delivery__title.delivery__title_page_home.title OkeyPost удобная и быстрая доставка посылок из Великобритании 
+      p.delivery__text.text-light Рассчитайте стоимость доставки из Англии к вам домой. Мы получим ваши посылки на складе, при необходимости объединим несколько доставок в одну и отправим их к вам надежно упакованными.
+      form.delivery__form.calc-form(action="#") 
+        .calc-form__inputs-block 
+          .calc-form__select.select-calc
+            label.select-calc__label(for="calc-select-country") Страна:
+            .select-calc__select-wrapper._icon-globus
+              select#calc-select-country.select-calc__select(name="calc-select-country") 
+                option(value="1" selected) Россия
+                option(value="2") Казахстан
+                option(value="3") Белоруссия
+                option(value="4") Турция
+
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-city") Город:
+            .input-calc__input-wrapper._icon-building
+              input#calc-city.input-calc__input(name="calc-city" type="text" required='' value="Москва")
+          
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-index") Индекс:
+            .input-calc__input-wrapper._icon-notebook
+              input#calc-index.input-calc__input(name="calc-index" type="text" required='' placeholder="Введите индекс")
+
+          .calc-form__input.input-calc
+            label.input-calc__label(for="calc-weight") Вес посылки:
+            .input-calc__input-wrapper._icon-barbell
+              input#calc-weight.input-calc__input(name="calc-weight" type="text" required='' value="0,5")
+
+          .calc-form__select.select-calc
+            label.select-calc__label(for="calc-select-service") Дополнительные услуги:
+            .select-calc__select-wrapper._icon-textdoc
+              select#calc-select-service.select-calc__select(name="calc-select-service") 
+                option(disabled selected) Выберите услуги
+                option(value="1") Услуга
+                option(value="2") Услуга
+                option(value="3") Услуга
+
+        button.calc-form__button.button(type="submit") Рассчитать
+      h2.delivery__title.title Варианты доставки:
+      .delivery__accordeon.accordeon-delivery(data-spollers='' data-one-spoller='')
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post.svg", alt="Почта России")
+              h3.title-accordeon-delivery__heading-title Почта России
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 10-14 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £27.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £41.99
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Обычная доставка по почте России
+
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post-esm.svg", alt="EMS ПОЧТА РОССИЯ")
+              h3.title-accordeon-delivery__heading-title EMS ПОЧТА РОССИЯ
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 9-12 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £40.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £54.55
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Доставка по почте России: ESM
+
+        .accordeon-delivery__item
+          .accordeon-delivery__title.title-accordeon-delivery(type='button' data-spoller='')
+            .title-accordeon-delivery__heading
+              .title-accordeon-delivery__heading-image 
+                img(src="img/icons/accordeon-delivery/post-small.svg", alt="Почта России")
+              h3.title-accordeon-delivery__heading-title ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ
+            
+            .title-accordeon-delivery__info.info-accordeon-delivery
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Сроки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery 10-14 дней
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Стоимость доставки:
+                span.info-accordeon-delivery__text.text-accordeon-delivery от £13.00
+              .info-accordeon-delivery__item
+                span.info-accordeon-delivery__title Итого:
+                span.info-accordeon-delivery__text.text-accordeon-delivery £90.50
+              .info-accordeon-delivery__item
+                .info-accordeon-delivery__arrow._icon-arrow-bottom
+          .accordeon-delivery__body.text-light Доставка по почте России: мелкие пакеты
+
+  //- 5-й экран
+  section.page__steps.steps
+    .steps__container
+      h2.steps__title.title 4 простых шага для ваших покупок в Великобритании 
+      .steps__block-steps
+        .steps__step.steps-item
+          .steps-item__image 
+            img(src="img/icons/steps/choice.png", alt="выбор товара")
+          h3.steps-item__title вы ВЫБИРАЕТЕ ТОВАР
+          p.steps-item__text в английском магазине, оплачиваете и указываете <a href="#" class="steps-item__text_green">адрес склада</a> OkeyPost
+
+        .steps__step.steps-item 
+          .steps-item__image 
+            img(src="img/icons/steps/purchase.png", alt="выбор товара")
+          h3.steps-item__title ПОКУПКИ ПРИХОДЯТ НА СКЛАД
+          p.steps-item__text и появляются в вашем личном кабинете на нашем сайте
+
+        .steps__step.steps-item 
+          .steps-item__image 
+            img(src="img/icons/steps/map.png", alt="выбор товара")
+          h3.steps-item__title ОТПРАВЛЯЕМ ИХ К ВАМ ДОМОЙ
+          p.steps-item__text в надежной упаковке, по выгодной цене и очень быстро
+
+        .steps__step.steps-item 
+          .steps-item__image 
+            img(src="img/icons/steps/adoption.png", alt="выбор товара")
+          h3.steps-item__title ЗАБИРАЕТЕ свою ПОСЫЛКУ
+          p.steps-item__text в пункте выдачи, на почте или с курьером
+      p.steps__text.text-light Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.
+      a.steps__link.button(href="#") Быстрая покупка
+
+  //- 6-й экран
+  section.page__try.try 
+    .try__background.bg-block
+      .try__container
+        .try__image 
+          img(src="img/smart-tv.png", alt="OkeyPost try")
+        .try__text.text-try
+          h3.text-try__title Виртуальный тур по нашему складу в реальном времени
+          p.text-try__text.text-light Вы можете всегда посмотреть на нашу слаженую работу на складе
+          div 
+            a.text-try__link.button(href="#") Попробовать
+
+  //- 7-й экран
+  section.page__reviews.reviews
+    .reviews__container
+      h2.reviews__title.title 120 000 довольных клиентов в России уже сделали свой выбор
+      p.reviews__text За последний год десятки тысяч наших клиентов заказали товары из Англии и оставили 19 633 отзыва
+      
+      .reviews__info.info-reviews
+        .info-reviews__item 
+          .info-reviews__image
+            img(src="img/icons/info-reviews/notebook.svg", alt="Больше не значит дороже")
+          h4.info-reviews__title Больше не значит дороже
+          p.info-reviews__text С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.
+        .info-reviews__item 
+          .info-reviews__image
+            img(src="img/icons/info-reviews/timer.svg", alt="Быстрая обработка посылок")
+          h4.info-reviews__title Быстрая обработка посылок
+          p.info-reviews__text Посылка обрабатывается не дольше 48 часов после поступления на склад.
+        .info-reviews__item 
+          .info-reviews__image
+            img(src="img/icons/info-reviews/phone.svg", alt="SMS-уведомления")
+          h4.info-reviews__title SMS-уведомления
+          p.info-reviews__text Отслеживайте весь процесс с помощью sms-уведомлений.
+
+      h3.reviews__sub-title Отзывы и цитаты блогеров:
+
+      .reviews__reviews.reviews-block
+        .reviews-block__item 
+          .reviews-block__image 
+            img(src="img/reviews/review_1.png", alt="Отзыв NIKOLAY S")
+          .reviews-block__description
+            .reviews-block__text-block
+              h4.reviews-block__title NIKOLAY S
+              .reviews-block__rating.rating
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+              p.reviews-block__text Ваша доставка самая быстрая и дешёвая!!!
+            .reviews-block__info-block 
+              .reviews-block__info-title Дата:<br>Город:
+              .reviews-block__info-text 16 ноября 2021<br>Санкт-Петербург
+
+        .reviews-block__item 
+          .reviews-block__image 
+            img(src="img/reviews/review_2.png", alt="Отзыв DMITRIY D")
+          .reviews-block__description
+            .reviews-block__text-block
+              h4.reviews-block__title DMITRIY D
+              .reviews-block__rating.rating
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+              p.reviews-block__text Пуховик Levi's c eBay. Всё приехало быстро и целым.
+            .reviews-block__info-block 
+              .reviews-block__info-title Дата:<br>Город:
+              .reviews-block__info-text 16 ноября 2021<br>Москва
+
+        .reviews-block__item 
+          .reviews-block__image 
+            img(src="img/reviews/review_3.png", alt="Отзыв VLADIMIR E")
+          .reviews-block__description
+            .reviews-block__text-block
+              h4.reviews-block__title VLADIMIR E
+              .reviews-block__rating.rating
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+              p.reviews-block__text Огонь, как всегда! Отдельное спасибо за доп.упаковку, часики от Apple пришли в простом бумажном пакете)
+            .reviews-block__info-block 
+              .reviews-block__info-title Дата:<br>Город:
+              .reviews-block__info-text 16 ноября 2021<br>Санкт-Петербург
+
+        .reviews-block__item 
+          .reviews-block__image 
+            img(src="img/reviews/review_4.png", alt="Отзыв Оксана")
+          .reviews-block__description
+            .reviews-block__text-block
+              h4.reviews-block__title Оксана
+              .reviews-block__rating.rating
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+                i._icon-star.rating__item
+              p.reviews-block__text Очень быстро, надежно! Как всегда большое спасибо за работу!
+            .reviews-block__info-block 
+              .reviews-block__info-title Дата:<br>Город:
+              .reviews-block__info-text 16 ноября 2021<br>Odintsovo
+
+      a.reviews__link.button(href="#") Все отзывы
+
+  //- 8-й экран
+  section.page__info.info
+    .info__container 
+      h2.info__title.title Ваш личный адрес в Великобритании  для покупок
+      p.info__text С нами вы получаете целых два адреса в UK! У нас есть два склада для приема посылок – в Лондоне и Манчестере. Указывайте в магазине тот из них, отправка на который обойдется дешевле (или покупка будет без налогов). Чаще всего в Лондоне наши клиенты заказывают одежду и обувь, а в Манчестер идут гаджеты и всё остальное. С OkeyPost вы всегда получаете максимальную выгоду!
+      p.info__text При доставке из UK в Россию все ваши товары обязательно страхуются. Прием посылок на наш склад, их обработка, удаление лишних коробок, хранение сроком до 70 дней – у нас полностью бесплатно. Мы также бесплатно проводим объединение посылок из разных магазинов в одну. Это необходимо для снижения стоимости доставки посылок из UK в Россию.
+      p.info__text У нас самая выгодная доставка! От $11.99 за посылку! А если у вас есть какие-то особенные требования, вроде проверки техники или дополнительной пленки для самых хрупких товаров, – операторы нашего склада с радостью выполнят их по спецзапросу.
+      p.info__text Okeypost.com – это надежно, быстро и выгодно. А в наших соцсетях вы всегда найдете информацию о лучших скидках английских магазинов. Не обязательно заходить в Черную пятницу или Prime Day, крутые акции проходят каждый день!
+
+  //- 9-й экран
+  section.page__post.post 
+    .post__background.bg-block
+      .post__container
+        h3.post__title Подпишитеть и будьте в курсе всех скидок и акций магазинов Великобритании!
+        form.post__form.post-form(action="#") 
+          .post-form__input-wrap._icon-email
+            input.post-form__input(name='input-post-form' type="email" required='' placeholder='Введите ваш email')
+          button.post-form__button.button(type='submit') Подписаться

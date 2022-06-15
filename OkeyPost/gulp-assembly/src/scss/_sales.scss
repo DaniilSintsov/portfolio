@@ -1,0 +1,81 @@
+.catalog {
+  &__title {
+    @include adaptiveValue('margin-bottom', 40, 15);
+    max-width: rem(670);
+  }
+}
+
+//=======================================================================================================================
+.products-catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(30);
+
+  @media (max-width: $mobileSmall) {
+    grid-template-columns: 1fr;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: percent(328, 685) 1fr;
+    @include adaptiveValue('column-gap', 55, 15, $containerWidth, 767.98, 1);
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(10);
+    padding: rem(15) 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: rem(10);
+    @include adaptiveValue('font-size', 24, 18, $containerWidth, 320, 1);
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 150%;
+    @include adaptiveValue('font-size', 18, 14, $containerWidth, 320, 1);
+
+    &:not(:last-child) {
+      @include adaptiveValue('margin-bottom', 18, 10, $containerWidth, 320, 1);
+    }
+
+    &_bold {
+      font-weight: 700;
+    }
+
+    &_green {
+      color: #01cd7d;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: #01cd7d;
+    line-height: 150%;
+    @include adaptiveValue('font-size', 18, 14, $containerWidth, 320, 1);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

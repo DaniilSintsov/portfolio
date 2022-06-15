@@ -1,0 +1,50 @@
+.bonuses {
+  &__title {
+    @include adaptiveValue('margin-bottom', 40, 15, $containerWidth, 320, 1);
+  }
+
+  &__block-bonuses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptiveValue('gap', 30, 15, $containerWidth, 320, 1);
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__bonus {
+    @include adaptiveValue('padding', 35, 15, $containerWidth, 320, 1);
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: rem(16);
+  }
+
+  &__img-bonus {
+    display: flex;
+
+    &:not(:last-child) {
+      @include adaptiveValue('margin-bottom', 30, 10, $containerWidth, 320, 1);
+    }
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  &__title-bonus {
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: 111%;
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__text-bonus {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: 188%;
+    max-width: rem(500);
+  }
+}
