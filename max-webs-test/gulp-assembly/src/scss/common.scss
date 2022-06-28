@@ -1,0 +1,23 @@
+.title {
+  @include adaptiveValue('font-size', 60, 27, $containerWidth, 320, 1);
+  line-height: math.div(72, 60);
+  color: #141419;
+  background-size: 1px 1em;
+  position: relative;
+  background-image: linear-gradient(to right, $orange 0%, $orange 100%);
+  background-repeat: repeat-x;
+  background-position: left 0 bottom 0.25em;
+  background-size: 100% 0.175em;
+  display: inline;
+}
+
+//===================================================================================================================================================================
+.text {
+  line-height: math.div(36, 24);
+  @include adaptiveValue('font-size', 24, 18, $containerWidth, 320, 1);
+}
+
+//===================================================================================================================================================================
+.margin-bottom {
+  @include adaptiveValue('margin-bottom', 140, 20, $containerWidth, 320, 1);
+}
