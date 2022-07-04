@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "example-layout",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -11,7 +11,7 @@
     "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSprive"
   },
-  "author": "",
+  "author": "Daniil Sintsov <daniilsintsov2007@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "latest",
