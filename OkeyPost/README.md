@@ -4,6 +4,6 @@ OkeyPost is an adaptive cross-browser website presenting an online store that se
 
 **Note:** the *gulp-assembly* folder contains the project source files
 
-## Screenshot (first page):
+## Screenshot (homepage):
 
 ![OkeyPost](../assets/Home_-_OkeyPost.png)
